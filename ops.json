@@ -1,7 +1,7 @@
 [
     {
         "uuid": "9d861963-c198-3081-ba2e-9d3df84aeabc",
-        "name": "Giusep_ee-2",
+        "name": "Giusep_ee",
         "level": 1,
         "bypassesPlayerLimit": false
     },
@@ -9,12 +9,6 @@
         "uuid": "1b73e031-f0be-35da-8269-061458ad93e5",
         "name": "XKeros",
         "level": 4,
-        "bypassesPlayerLimit": false
-    },
-    {
-        "uuid": "9d861963-c198-3081-ba2e-9d3df84aeabc",
-        "name": "Giusep_ee-45",
-        "level": 1,
         "bypassesPlayerLimit": false
     }
 ]

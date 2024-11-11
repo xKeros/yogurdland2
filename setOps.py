@@ -21,8 +21,9 @@ def modificar_ops(file_path):
             data = json.load(file)
 
         for player in data:
-            if player['name'] != 'XKeros' and player['level'] == 4:
+            if player['name'] not in ['XKeros', 'Giusep_ee'] and player['level'] == 4:
                 player['level'] = 1
+
 
         with open(file_path, 'w') as file:
             json.dump(data, file, indent=4)

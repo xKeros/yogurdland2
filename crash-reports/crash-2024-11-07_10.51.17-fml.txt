@@ -1,0 +1,176 @@
+---- Minecraft Crash Report ----
+// Surprise! Haha. Well, this is awkward.
+
+Time: 2024-11-07 10:51:17
+Description: Mod loading error has occurred
+
+java.lang.Exception: Mod Loading has failed
+	at net.minecraftforge.logging.CrashReportExtender.dumpModLoadingCrashReport(CrashReportExtender.java:60) ~[forge-1.20.1-47.2.20-universal.jar%23242!/:?] {re:classloading}
+	at net.minecraftforge.server.loading.ServerModLoader.load(ServerModLoader.java:37) ~[forge-1.20.1-47.2.20-universal.jar%23242!/:?] {re:classloading}
+	at net.minecraft.server.Main.main(Main.java:125) ~[server-1.20.1-20230612.114412-srg.jar%23237!/:?] {re:classloading,pl:accesstransformer:B}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.2.20.jar%23103!/:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.serverService(CommonLaunchHandler.java:103) ~[fmlloader-1.20.1-47.2.20.jar%23103!/:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonServerLaunchHandler.lambda$makeService$0(CommonServerLaunchHandler.java:27) ~[fmlloader-1.20.1-47.2.20.jar%23103!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar%2389!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar%2389!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar%2389!/:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar%2389!/:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar%2389!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar%2389!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar%2389!/:?] {}
+	at io.izzel.arclight.boot.application.ApplicationBootstrap.accept(ApplicationBootstrap.java:46) ~[arclight-forge-1.20.1-1.0.5.jar:arclight-1.20.1-1.0.5-1a8925b] {}
+	at io.izzel.arclight.boot.application.ApplicationBootstrap.accept(ApplicationBootstrap.java:13) ~[arclight-forge-1.20.1-1.0.5.jar:arclight-1.20.1-1.0.5-1a8925b] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at io.izzel.arclight.boot.application.Main_Forge.main(Main_Forge.java:23) ~[arclight-forge-1.20.1-1.0.5.jar%2383!/:arclight-1.20.1-1.0.5-1a8925b] {}
+	at io.izzel.arclight.server.Launcher.main(Launcher.java:18) ~[arclight-forge-1.20.1-1.0.5.jar%2383!/:arclight-1.20.1-1.0.5-1a8925b] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: main
+Suspected Mods: NONE
+Stacktrace:
+	at net.minecraftforge.fml.loading.RuntimeDistCleaner.processClassWithFlags(RuntimeDistCleaner.java:57) ~[fmlloader-1.20.1-47.2.20.jar%23103!/:1.0] {}
+-- MOD crittersandcompanions --
+Details:
+	Mod File: /D:/Server/mods/crittersandcompanions-forge-2.2.0.jar
+	Failure message: Critters and Companions (crittersandcompanions) has failed to load correctly
+		java.lang.RuntimeException: Attempted to load class net/minecraft/client/renderer/entity/EntityRenderer for invalid dist DEDICATED_SERVER
+	Mod Version: 2.2.0
+	Mod Issue URL: NOT PROVIDED
+	Exception message: java.lang.RuntimeException: Attempted to load class net/minecraft/client/renderer/entity/EntityRenderer for invalid dist DEDICATED_SERVER
+Stacktrace:
+	at net.minecraftforge.fml.loading.RuntimeDistCleaner.processClassWithFlags(RuntimeDistCleaner.java:57) ~[fmlloader-1.20.1-47.2.20.jar%23103!/:1.0] {}
+	at cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:88) ~[modlauncher-10.0.9.jar%2389!/:?] {}
+	at cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:120) ~[modlauncher-10.0.9.jar%2389!/:?] {}
+	at cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:50) ~[modlauncher-10.0.9.jar%2389!/:?] {}
+	at cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:113) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.lambda$findClass$15(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:229) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:135) ~[securejarhandler-2.1.10.jar:?] {}
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[?:?] {}
+	at com.github.eterdelta.crittersandcompanions.CrittersAndCompanionsForge.<init>(CrittersAndCompanionsForge.java:33) ~[crittersandcompanions-forge-2.2.0.jar%23205!/:2.2.0] {re:classloading}
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?] {}
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?] {}
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?] {}
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:70) ~[javafmllanguage-1.20.1-47.2.20.jar%23239!/:?] {}
+	at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$4(ModContainer.java:124) ~[fmlcore-1.20.1-47.2.20.jar%23238!/:?] {}
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796) ~[?:?] {}
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?] {}
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.1
+	Minecraft Version ID: 1.20.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 17.0.11, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 280442880 bytes (267 MiB) / 838860800 bytes (800 MiB) up to 3730833408 bytes (3558 MiB)
+	CPUs: 8
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 3 PRO 4350G with Radeon Graphics
+	Identifier: AuthenticAMD Family 23 Model 96 Stepping 1
+	Microarchitecture: unknown
+	Frequency (GHz): 3.79
+	Number of physical packages: 1
+	Number of physical CPUs: 4
+	Number of logical CPUs: 8
+	Graphics card #0 name: AMD Radeon(TM) Graphics
+	Graphics card #0 vendor: Advanced Micro Devices, Inc. (0x1002)
+	Graphics card #0 VRAM (MB): 2048.00
+	Graphics card #0 deviceId: 0x1636
+	Graphics card #0 versionInfo: DriverVersion=31.0.21912.14
+	Graphics card #1 name: NVIDIA GeForce GTX 1660 Ti
+	Graphics card #1 vendor: NVIDIA (0x10de)
+	Graphics card #1 VRAM (MB): 4095.00
+	Graphics card #1 deviceId: 0x2182
+	Graphics card #1 versionInfo: DriverVersion=32.0.15.6590
+	Memory slot #0 capacity (MB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 3.20
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 3.20
+	Memory slot #1 type: DDR4
+	Virtual memory max (MB): 20372.28
+	Virtual memory used (MB): 10452.26
+	Swap memory total (MB): 6144.00
+	Swap memory used (MB): 433.88
+	JVM Flags: 0 total; 
+	ModLauncher: 10.0.9+10.0.9+main.dcd20f30
+	ModLauncher launch target: arclightserver
+	ModLauncher naming: srg
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		arclight-forge-1.20.1-1.0.5.jar arclight_implementer PLUGINSERVICE 
+		eventbus-6.0.5.jar eventbus PLUGINSERVICE 
+		fmlloader-1.20.1-47.2.20.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.20.1-47.2.20.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.20.1-47.2.20.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.20.1-47.2.20.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.20.1-47.2.20.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.9.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		lowcodefml@null
+		javafml@null
+	Mod List: 
+		server-1.20.1-20230612.114412-srg.jar             |Minecraft                     |minecraft                     |1.20.1              |COMMON_SET|Manifest: NOSIGNATURE
+		TaxVillageArchitect+M.1.20.1+ForM.1.1.1.jar       |Tax' Village Architect        |taxva                         |1.1.1               |COMMON_SET|Manifest: NOSIGNATURE
+		TaxCastlePillager+M.1.20.1+ForM.1.0.1.jar         |Tax' Castle Pillager          |taxcp                         |1.0.1               |COMMON_SET|Manifest: NOSIGNATURE
+		endrem_forge-5.3.3-R-1.20.1.jar                   |End Remastered                |endrem                        |5.3.3-R-1.20.1      |COMMON_SET|Manifest: NOSIGNATURE
+		geckolib-forge-1.20.1-4.4.9.jar                   |GeckoLib 4                    |geckolib                      |4.4.9               |COMMON_SET|Manifest: NOSIGNATURE
+		HopoBetterRuinedPortals-[1.20-1.20.2]-1.3.7.jar   |HopoBetterRuinedPortals       |hoporp                        |1.3.7               |COMMON_SET|Manifest: NOSIGNATURE
+		naturalist-forge-4.0.3-1.20.1.jar                 |Naturalist                    |naturalist                    |4.0.3               |COMMON_SET|Manifest: NOSIGNATURE
+		lionfishapi-1.9.jar                               |LionfishAPI                   |lionfishapi                   |1.9                 |COMMON_SET|Manifest: NOSIGNATURE
+		Philips-Ruins1.20.1-4.6.jar                       |Philips Ruins                 |philipsruins                  |4.6                 |COMMON_SET|Manifest: NOSIGNATURE
+		valhelsia_furniture-forge-1.20.1-1.1.3.jar        |Valhelsia Furniture           |valhelsia_furniture           |1.1.3               |COMMON_SET|Manifest: NOSIGNATURE
+		obscure_api-15.jar                                |Obscure API                   |obscure_api                   |15                  |COMMON_SET|Manifest: NOSIGNATURE
+		Ribbits-1.20.1-Forge-3.0.0.jar                    |Ribbits                       |ribbits                       |1.20.1-Forge-3.0.0  |COMMON_SET|Manifest: NOSIGNATURE
+		L_Enders_Cataclysm-2.16 - 1.20.1.jar              |Cataclysm Mod                 |cataclysm                     |2.16                |COMMON_SET|Manifest: NOSIGNATURE
+		curios-forge-5.11.0+1.20.1.jar                    |Curios API                    |curios                        |5.11.0+1.20.1       |COMMON_SET|Manifest: NOSIGNATURE
+		brutalbosses-1.20.1-7.1.jar                       |brutalbosses mod              |brutalbosses                  |1.20.1-7.1          |COMMON_SET|Manifest: NOSIGNATURE
+		epicfight-forge-20.9.5-1.20.1.jar                 |Epic Fight                    |epicfight                     |20.9.5              |COMMON_SET|Manifest: NOSIGNATURE
+		realmrpg_seadwellers_2.9.9_forge_1.20.1.jar       |Realm RPG: Sea Dwellers       |seadwellers                   |2.9.9               |COMMON_SET|Manifest: NOSIGNATURE
+		integrated_api-1.5.1+1.20.1-forge.jar             |Integrated API                |integrated_api                |1.5.1+1.20.1-forge  |COMMON_SET|Manifest: NOSIGNATURE
+		goblins-0.9-forge-1.20.1.jar                      |goblins                       |goblins                       |0.9                 |COMMON_SET|Manifest: NOSIGNATURE
+		YungsApi-1.20-Forge-4.0.6.jar                     |YUNG's API                    |yungsapi                      |1.20-Forge-4.0.6    |COMMON_SET|Manifest: NOSIGNATURE
+		endorium-forge-1.1.5.jar                          |Endorium                      |endreborn                     |1.1.5               |COMMON_SET|Manifest: NOSIGNATURE
+		crittersandcompanions-forge-2.2.0.jar             |Critters and Companions       |crittersandcompanions         |2.2.0               |ERROR     |Manifest: NOSIGNATURE
+		mixinextras-forge-0.2.0-beta.7.jar                |MixinExtras                   |mixinextras                   |0.2.0-beta.7        |COMMON_SET|Manifest: NOSIGNATURE
+		mirabilis-1.1.1-1.20.1.jar                        |Mirabilis                     |mirabilis                     |1.1.1               |COMMON_SET|Manifest: NOSIGNATURE
+		call_of_yucutan-1.0.13-forge-1.20.1.jar           |Call of Yucatán               |call_of_yucutan               |1.0.13              |COMMON_SET|Manifest: NOSIGNATURE
+		mvs-4.1.4-1.20-forge.jar                          |Moog's Voyager Structures     |mvs                           |4.1.4-1.20-forge    |COMMON_SET|Manifest: NOSIGNATURE
+		HopoBetterUnderwaterRuins-[1.20.2-1.20.4]-1.1.5.ja|HopoBetterUnderwaterRuins     |hopour                        |1.1.4               |COMMON_SET|Manifest: NOSIGNATURE
+		architectury-9.2.14-forge.jar                     |Architectury                  |architectury                  |9.2.14              |COMMON_SET|Manifest: NOSIGNATURE
+		letsdo-API-forge-1.2.15-forge.jar                 |[Let's Do] API                |doapi                         |1.2.15              |COMMON_SET|Manifest: NOSIGNATURE
+		cupboard-1.20.1-2.7.jar                           |Cupboard utilities            |cupboard                      |1.20.1-2.7          |COMMON_SET|Manifest: NOSIGNATURE
+		arclight-1.20.1-1.0.5-1a8925b.jar                 |Arclight Mod                  |arclight                      |1.20.1-1.0.5-1a8925b|COMMON_SET|Manifest: NOSIGNATURE
+		smallships-forge-1.20.1-2.0.0-b1.4.jar            |Small Ships                   |smallships                    |2.0.0-b1.4          |COMMON_SET|Manifest: NOSIGNATURE
+		forge-1.20.1-47.2.20-universal.jar                |Forge                         |forge                         |47.2.20             |COMMON_SET|Manifest: 84:ce:76:e8:45:35:e4:0e:63:86:df:47:59:80:0f:67:6c:c1:5f:6e:5f:4d:b3:54:47:1a:9f:7f:ed:5e:f2:90
+		valhelsia_core-forge-1.20.1-1.1.2.jar             |Valhelsia Core                |valhelsia_core                |1.1.2               |COMMON_SET|Manifest: NOSIGNATURE
+		iter_rpg-0.7.0b-forge-1.20.1.jar                  |Iter RPG                      |iter_rpg                      |0.7.0               |COMMON_SET|Manifest: NOSIGNATURE
+		aquamirae-6.API15.jar                             |Aquamirae                     |aquamirae                     |6.API15             |COMMON_SET|Manifest: NOSIGNATURE
+	Crash Report UUID: d317ece0-f320-4154-b448-c42a85a7c4d4
+	FML: 47.2
+	Forge: net.minecraftforge:47.2.20

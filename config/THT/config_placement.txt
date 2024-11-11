@@ -1,0 +1,522 @@
+- This config auto apply the changes, so no need to stop the world.
+- Repair missing values by run this command [ /THT config repair ] or restart the world
+- If you change something in this config, you need to turn lock option to true to prevent it from replaced by new version.
+- [biome] is biome that tree can spawn in. Supported multiple biome IDs and biome tags. For advance, [@all] for all biomes, [@vanilla] for vanilla biomes, add [!] for if-not, add [&] for compulsion (if it's not then cancel all).
+- [ground_block] is block that tree can spawn on. Supported multiple block IDs and block tags. For advance, [@all] for all blocks, add [!] for if-not, add [&] for compulsion (if it's not then cancel all).
+- [rarity] is the main option for set how common of trees. Only supported number between 0 to 100 Higher make it more common. Set to 0 to disable it.
+- [min_distance] is the min distance in blocks between trees in the same species. Higher number make it more rare. Only work when the chunks around the other one is loading.
+- [group_chance] is a chance for trees to spawn nearby other in the same species, work good with the trees that have low rarity. Only supported number between 0 to 1
+- [dead_tree_chance] is a chance for trees to spawn as dead tree, no leaves and sometimes no twig or even become hollowed tree. Only supported number between 0 to 1
+- [dead_tree_level_min] is max level of dead tree. Useful for some trees such as coconut tree that use branch part as leaves. Only supported number between 1 to 5
+- [rotation] is where the trees randomly facing to. Set to number between 0 to 359 for manual rotation (mostly use in spikes). Set to 360 for random NWES rotation.
+- [mirrored] is option to swap side of trees from left to right (mirror). Set to 1 or 2 for manual mirrored. Set to 0 for random mirrored.
+
+----------------------------------------------------------------------------------------------------
+
+THT-tree_pack-main
+
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  biomesoplenty  >  alpha_oak_biomesoplenty        |        biome : biomesoplenty:origin_valley
+THT-tree_pack-main  /  biomesoplenty  >  alpha_oak_biomesoplenty        |        ground_block : biomesoplenty:origin_grass_block
+THT-tree_pack-main  /  biomesoplenty  >  alpha_oak_biomesoplenty        |        rarity : 50
+THT-tree_pack-main  /  biomesoplenty  >  alpha_oak_biomesoplenty        |        min_distance : 0
+THT-tree_pack-main  /  biomesoplenty  >  alpha_oak_biomesoplenty        |        group_chance : 0
+THT-tree_pack-main  /  biomesoplenty  >  alpha_oak_biomesoplenty        |        dead_tree_chance : 0.01
+THT-tree_pack-main  /  biomesoplenty  >  alpha_oak_biomesoplenty        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  biomesoplenty  >  alpha_oak_biomesoplenty        |        rotation : 360
+THT-tree_pack-main  /  biomesoplenty  >  alpha_oak_biomesoplenty        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  biomesoplenty  >  beta_oak_biomesoplenty        |        biome : biomesoplenty:origin_valley
+THT-tree_pack-main  /  biomesoplenty  >  beta_oak_biomesoplenty        |        ground_block : biomesoplenty:origin_grass_block
+THT-tree_pack-main  /  biomesoplenty  >  beta_oak_biomesoplenty        |        rarity : 50
+THT-tree_pack-main  /  biomesoplenty  >  beta_oak_biomesoplenty        |        min_distance : 10
+THT-tree_pack-main  /  biomesoplenty  >  beta_oak_biomesoplenty        |        group_chance : 0
+THT-tree_pack-main  /  biomesoplenty  >  beta_oak_biomesoplenty        |        dead_tree_chance : 0.01
+THT-tree_pack-main  /  biomesoplenty  >  beta_oak_biomesoplenty        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  biomesoplenty  >  beta_oak_biomesoplenty        |        rotation : 360
+THT-tree_pack-main  /  biomesoplenty  >  beta_oak_biomesoplenty        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  biomesoplenty  >  bush_dense        |        biome : biomesoplenty:lush_desert
+THT-tree_pack-main  /  biomesoplenty  >  bush_dense        |        ground_block : biomesoplenty:orange_sand
+THT-tree_pack-main  /  biomesoplenty  >  bush_dense        |        rarity : 50
+THT-tree_pack-main  /  biomesoplenty  >  bush_dense        |        min_distance : 0
+THT-tree_pack-main  /  biomesoplenty  >  bush_dense        |        group_chance : 0.5
+THT-tree_pack-main  /  biomesoplenty  >  bush_dense        |        dead_tree_chance : 0.01
+THT-tree_pack-main  /  biomesoplenty  >  bush_dense        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  biomesoplenty  >  bush_dense        |        rotation : 360
+THT-tree_pack-main  /  biomesoplenty  >  bush_dense        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  biomesoplenty  >  departure        |        biome : biomesoplenty:tropics
+THT-tree_pack-main  /  biomesoplenty  >  departure        |        ground_block : minecraft:grass_block, minecraft:sand
+THT-tree_pack-main  /  biomesoplenty  >  departure        |        rarity : 10
+THT-tree_pack-main  /  biomesoplenty  >  departure        |        min_distance : 75
+THT-tree_pack-main  /  biomesoplenty  >  departure        |        group_chance : 0
+THT-tree_pack-main  /  biomesoplenty  >  departure        |        dead_tree_chance : 0.01
+THT-tree_pack-main  /  biomesoplenty  >  departure        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  biomesoplenty  >  departure        |        rotation : 360
+THT-tree_pack-main  /  biomesoplenty  >  departure        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  biomesoplenty  >  falcon_biomesoplenty_maple        |        biome : biomesoplenty:maple_woods
+THT-tree_pack-main  /  biomesoplenty  >  falcon_biomesoplenty_maple        |        ground_block : #minecraft:dirt
+THT-tree_pack-main  /  biomesoplenty  >  falcon_biomesoplenty_maple        |        rarity : 50
+THT-tree_pack-main  /  biomesoplenty  >  falcon_biomesoplenty_maple        |        min_distance : 25
+THT-tree_pack-main  /  biomesoplenty  >  falcon_biomesoplenty_maple        |        group_chance : 0
+THT-tree_pack-main  /  biomesoplenty  >  falcon_biomesoplenty_maple        |        dead_tree_chance : 0.01
+THT-tree_pack-main  /  biomesoplenty  >  falcon_biomesoplenty_maple        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  biomesoplenty  >  falcon_biomesoplenty_maple        |        rotation : 360
+THT-tree_pack-main  /  biomesoplenty  >  falcon_biomesoplenty_maple        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  biomesoplenty  >  malus_domestica        |        biome : biomesoplenty:pasture
+THT-tree_pack-main  /  biomesoplenty  >  malus_domestica        |        ground_block : #minecraft:dirt
+THT-tree_pack-main  /  biomesoplenty  >  malus_domestica        |        rarity : 5
+THT-tree_pack-main  /  biomesoplenty  >  malus_domestica        |        min_distance : 10
+THT-tree_pack-main  /  biomesoplenty  >  malus_domestica        |        group_chance : 0.25
+THT-tree_pack-main  /  biomesoplenty  >  malus_domestica        |        dead_tree_chance : 0.01
+THT-tree_pack-main  /  biomesoplenty  >  malus_domestica        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  biomesoplenty  >  malus_domestica        |        rotation : 360
+THT-tree_pack-main  /  biomesoplenty  >  malus_domestica        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  biomesoplenty  >  old_witch        |        biome : biomesoplenty:marsh
+THT-tree_pack-main  /  biomesoplenty  >  old_witch        |        ground_block : #minecraft:dirt
+THT-tree_pack-main  /  biomesoplenty  >  old_witch        |        rarity : 5
+THT-tree_pack-main  /  biomesoplenty  >  old_witch        |        min_distance : 25
+THT-tree_pack-main  /  biomesoplenty  >  old_witch        |        group_chance : 0.5
+THT-tree_pack-main  /  biomesoplenty  >  old_witch        |        dead_tree_chance : 0.01
+THT-tree_pack-main  /  biomesoplenty  >  old_witch        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  biomesoplenty  >  old_witch        |        rotation : 360
+THT-tree_pack-main  /  biomesoplenty  >  old_witch        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  biomesoplenty  >  pumpkin        |        biome : biomesoplenty:pumpkin_patch
+THT-tree_pack-main  /  biomesoplenty  >  pumpkin        |        ground_block : #minecraft:dirt
+THT-tree_pack-main  /  biomesoplenty  >  pumpkin        |        rarity : 5
+THT-tree_pack-main  /  biomesoplenty  >  pumpkin        |        min_distance : 10
+THT-tree_pack-main  /  biomesoplenty  >  pumpkin        |        group_chance : 0.5
+THT-tree_pack-main  /  biomesoplenty  >  pumpkin        |        dead_tree_chance : 0.01
+THT-tree_pack-main  /  biomesoplenty  >  pumpkin        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  biomesoplenty  >  pumpkin        |        rotation : 360
+THT-tree_pack-main  /  biomesoplenty  >  pumpkin        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  biomesoplenty  >  rust        |        biome : biomesoplenty:woodland, biomesoplenty:old_growth_woodland
+THT-tree_pack-main  /  biomesoplenty  >  rust        |        ground_block : #minecraft:dirt
+THT-tree_pack-main  /  biomesoplenty  >  rust        |        rarity : 20
+THT-tree_pack-main  /  biomesoplenty  >  rust        |        min_distance : 50
+THT-tree_pack-main  /  biomesoplenty  >  rust        |        group_chance : 0
+THT-tree_pack-main  /  biomesoplenty  >  rust        |        dead_tree_chance : 0.01
+THT-tree_pack-main  /  biomesoplenty  >  rust        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  biomesoplenty  >  rust        |        rotation : 360
+THT-tree_pack-main  /  biomesoplenty  >  rust        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  biomesoplenty  >  the_walking_tree        |        biome : biomesoplenty:lush_desert
+THT-tree_pack-main  /  biomesoplenty  >  the_walking_tree        |        ground_block : #minecraft:dirt
+THT-tree_pack-main  /  biomesoplenty  >  the_walking_tree        |        rarity : 0.1
+THT-tree_pack-main  /  biomesoplenty  >  the_walking_tree        |        min_distance : 100
+THT-tree_pack-main  /  biomesoplenty  >  the_walking_tree        |        group_chance : 0.05
+THT-tree_pack-main  /  biomesoplenty  >  the_walking_tree        |        dead_tree_chance : 0.01
+THT-tree_pack-main  /  biomesoplenty  >  the_walking_tree        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  biomesoplenty  >  the_walking_tree        |        rotation : 90
+THT-tree_pack-main  /  biomesoplenty  >  the_walking_tree        |        mirrored : 1
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  regions_unexplored  >  hypothermia        |        biome : regions_unexplored:frozen_tundra
+THT-tree_pack-main  /  regions_unexplored  >  hypothermia        |        ground_block : #minecraft:dirt, minecraft:snow_block
+THT-tree_pack-main  /  regions_unexplored  >  hypothermia        |        rarity : 10
+THT-tree_pack-main  /  regions_unexplored  >  hypothermia        |        min_distance : 30
+THT-tree_pack-main  /  regions_unexplored  >  hypothermia        |        group_chance : 0
+THT-tree_pack-main  /  regions_unexplored  >  hypothermia        |        dead_tree_chance : 0.25
+THT-tree_pack-main  /  regions_unexplored  >  hypothermia        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  regions_unexplored  >  hypothermia        |        rotation : 0
+THT-tree_pack-main  /  regions_unexplored  >  hypothermia        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  vanilla  >  agathos        |        biome : minecraft:birch_forest
+THT-tree_pack-main  /  vanilla  >  agathos        |        ground_block : #minecraft:dirt
+THT-tree_pack-main  /  vanilla  >  agathos        |        rarity : 50
+THT-tree_pack-main  /  vanilla  >  agathos        |        min_distance : 20
+THT-tree_pack-main  /  vanilla  >  agathos        |        group_chance : 0
+THT-tree_pack-main  /  vanilla  >  agathos        |        dead_tree_chance : 0.01
+THT-tree_pack-main  /  vanilla  >  agathos        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  vanilla  >  agathos        |        rotation : 360
+THT-tree_pack-main  /  vanilla  >  agathos        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  vanilla  >  aider        |        biome : minecraft:old_growth_birch_forest
+THT-tree_pack-main  /  vanilla  >  aider        |        ground_block : #minecraft:dirt
+THT-tree_pack-main  /  vanilla  >  aider        |        rarity : 50
+THT-tree_pack-main  /  vanilla  >  aider        |        min_distance : 10
+THT-tree_pack-main  /  vanilla  >  aider        |        group_chance : 0
+THT-tree_pack-main  /  vanilla  >  aider        |        dead_tree_chance : 0.01
+THT-tree_pack-main  /  vanilla  >  aider        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  vanilla  >  aider        |        rotation : 360
+THT-tree_pack-main  /  vanilla  >  aider        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  vanilla  >  bad_omen        |        biome : minecraft:stony_shore
+THT-tree_pack-main  /  vanilla  >  bad_omen        |        ground_block : minecraft:stone, minecraft:gravel
+THT-tree_pack-main  /  vanilla  >  bad_omen        |        rarity : 25
+THT-tree_pack-main  /  vanilla  >  bad_omen        |        min_distance : 0
+THT-tree_pack-main  /  vanilla  >  bad_omen        |        group_chance : 0
+THT-tree_pack-main  /  vanilla  >  bad_omen        |        dead_tree_chance : 0
+THT-tree_pack-main  /  vanilla  >  bad_omen        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  vanilla  >  bad_omen        |        rotation : 360
+THT-tree_pack-main  /  vanilla  >  bad_omen        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  vanilla  >  baobab        |        biome : minecraft:savanna
+THT-tree_pack-main  /  vanilla  >  baobab        |        ground_block : #minecraft:dirt
+THT-tree_pack-main  /  vanilla  >  baobab        |        rarity : 0.5
+THT-tree_pack-main  /  vanilla  >  baobab        |        min_distance : 50
+THT-tree_pack-main  /  vanilla  >  baobab        |        group_chance : 0
+THT-tree_pack-main  /  vanilla  >  baobab        |        dead_tree_chance : 0.01
+THT-tree_pack-main  /  vanilla  >  baobab        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  vanilla  >  baobab        |        rotation : 360
+THT-tree_pack-main  /  vanilla  >  baobab        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  vanilla  >  beanstalk        |        biome : minecraft:flower_forest
+THT-tree_pack-main  /  vanilla  >  beanstalk        |        ground_block : #minecraft:dirt
+THT-tree_pack-main  /  vanilla  >  beanstalk        |        rarity : 5
+THT-tree_pack-main  /  vanilla  >  beanstalk        |        min_distance : 20
+THT-tree_pack-main  /  vanilla  >  beanstalk        |        group_chance : 0
+THT-tree_pack-main  /  vanilla  >  beanstalk        |        dead_tree_chance : 0
+THT-tree_pack-main  /  vanilla  >  beanstalk        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  vanilla  >  beanstalk        |        rotation : 360
+THT-tree_pack-main  /  vanilla  >  beanstalk        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  vanilla  >  beekeeper        |        biome : minecraft:flower_forest
+THT-tree_pack-main  /  vanilla  >  beekeeper        |        ground_block : #minecraft:dirt
+THT-tree_pack-main  /  vanilla  >  beekeeper        |        rarity : 10
+THT-tree_pack-main  /  vanilla  >  beekeeper        |        min_distance : 20
+THT-tree_pack-main  /  vanilla  >  beekeeper        |        group_chance : 0
+THT-tree_pack-main  /  vanilla  >  beekeeper        |        dead_tree_chance : 0.01
+THT-tree_pack-main  /  vanilla  >  beekeeper        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  vanilla  >  beekeeper        |        rotation : 360
+THT-tree_pack-main  /  vanilla  >  beekeeper        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  vanilla  >  bush        |        biome : minecraft:forest
+THT-tree_pack-main  /  vanilla  >  bush        |        ground_block : #minecraft:dirt
+THT-tree_pack-main  /  vanilla  >  bush        |        rarity : 10
+THT-tree_pack-main  /  vanilla  >  bush        |        min_distance : 0
+THT-tree_pack-main  /  vanilla  >  bush        |        group_chance : 0.25
+THT-tree_pack-main  /  vanilla  >  bush        |        dead_tree_chance : 0.01
+THT-tree_pack-main  /  vanilla  >  bush        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  vanilla  >  bush        |        rotation : 360
+THT-tree_pack-main  /  vanilla  >  bush        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  vanilla  >  bush_dense        |        biome : minecraft:sparse_jungle
+THT-tree_pack-main  /  vanilla  >  bush_dense        |        ground_block : #minecraft:dirt
+THT-tree_pack-main  /  vanilla  >  bush_dense        |        rarity : 50
+THT-tree_pack-main  /  vanilla  >  bush_dense        |        min_distance : 0
+THT-tree_pack-main  /  vanilla  >  bush_dense        |        group_chance : 0
+THT-tree_pack-main  /  vanilla  >  bush_dense        |        dead_tree_chance : 0.01
+THT-tree_pack-main  /  vanilla  >  bush_dense        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  vanilla  >  bush_dense        |        rotation : 360
+THT-tree_pack-main  /  vanilla  >  bush_dense        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  vanilla  >  bush_sparse        |        biome : minecraft:savanna
+THT-tree_pack-main  /  vanilla  >  bush_sparse        |        ground_block : #minecraft:dirt
+THT-tree_pack-main  /  vanilla  >  bush_sparse        |        rarity : 1
+THT-tree_pack-main  /  vanilla  >  bush_sparse        |        min_distance : 0
+THT-tree_pack-main  /  vanilla  >  bush_sparse        |        group_chance : 0.25
+THT-tree_pack-main  /  vanilla  >  bush_sparse        |        dead_tree_chance : 0.01
+THT-tree_pack-main  /  vanilla  >  bush_sparse        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  vanilla  >  bush_sparse        |        rotation : 360
+THT-tree_pack-main  /  vanilla  >  bush_sparse        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  vanilla  >  coconut_tree        |        biome : minecraft:beach
+THT-tree_pack-main  /  vanilla  >  coconut_tree        |        ground_block : #minecraft:dirt, minecraft:sand
+THT-tree_pack-main  /  vanilla  >  coconut_tree        |        rarity : 75
+THT-tree_pack-main  /  vanilla  >  coconut_tree        |        min_distance : 0
+THT-tree_pack-main  /  vanilla  >  coconut_tree        |        group_chance : 0
+THT-tree_pack-main  /  vanilla  >  coconut_tree        |        dead_tree_chance : 0.01
+THT-tree_pack-main  /  vanilla  >  coconut_tree        |        dead_tree_level_min : 5
+THT-tree_pack-main  /  vanilla  >  coconut_tree        |        rotation : 360
+THT-tree_pack-main  /  vanilla  >  coconut_tree        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  vanilla  >  departure        |        biome : minecraft:bamboo_jungle
+THT-tree_pack-main  /  vanilla  >  departure        |        ground_block : #minecraft:dirt
+THT-tree_pack-main  /  vanilla  >  departure        |        rarity : 10
+THT-tree_pack-main  /  vanilla  >  departure        |        min_distance : 100
+THT-tree_pack-main  /  vanilla  >  departure        |        group_chance : 0
+THT-tree_pack-main  /  vanilla  >  departure        |        dead_tree_chance : 0.01
+THT-tree_pack-main  /  vanilla  >  departure        |        dead_tree_level_min : 5
+THT-tree_pack-main  /  vanilla  >  departure        |        rotation : 360
+THT-tree_pack-main  /  vanilla  >  departure        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  vanilla  >  falcon        |        biome : minecraft:forest
+THT-tree_pack-main  /  vanilla  >  falcon        |        ground_block : #minecraft:dirt
+THT-tree_pack-main  /  vanilla  >  falcon        |        rarity : 50
+THT-tree_pack-main  /  vanilla  >  falcon        |        min_distance : 30
+THT-tree_pack-main  /  vanilla  >  falcon        |        group_chance : 0
+THT-tree_pack-main  /  vanilla  >  falcon        |        dead_tree_chance : 0.01
+THT-tree_pack-main  /  vanilla  >  falcon        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  vanilla  >  falcon        |        rotation : 360
+THT-tree_pack-main  /  vanilla  >  falcon        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  vanilla  >  fallen_angle        |        biome : minecraft:savanna
+THT-tree_pack-main  /  vanilla  >  fallen_angle        |        ground_block : #minecraft:dirt
+THT-tree_pack-main  /  vanilla  >  fallen_angle        |        rarity : 1
+THT-tree_pack-main  /  vanilla  >  fallen_angle        |        min_distance : 30
+THT-tree_pack-main  /  vanilla  >  fallen_angle        |        group_chance : 0.1
+THT-tree_pack-main  /  vanilla  >  fallen_angle        |        dead_tree_chance : 0.1
+THT-tree_pack-main  /  vanilla  >  fallen_angle        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  vanilla  >  fallen_angle        |        rotation : 360
+THT-tree_pack-main  /  vanilla  >  fallen_angle        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  vanilla  >  halcyon        |        biome : minecraft:plains
+THT-tree_pack-main  /  vanilla  >  halcyon        |        ground_block : #minecraft:dirt
+THT-tree_pack-main  /  vanilla  >  halcyon        |        rarity : 0.5
+THT-tree_pack-main  /  vanilla  >  halcyon        |        min_distance : 30
+THT-tree_pack-main  /  vanilla  >  halcyon        |        group_chance : 0.1
+THT-tree_pack-main  /  vanilla  >  halcyon        |        dead_tree_chance : 0.01
+THT-tree_pack-main  /  vanilla  >  halcyon        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  vanilla  >  halcyon        |        rotation : 360
+THT-tree_pack-main  /  vanilla  >  halcyon        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  vanilla  >  legion        |        biome : minecraft:old_growth_spruce_taiga
+THT-tree_pack-main  /  vanilla  >  legion        |        ground_block : #minecraft:dirt
+THT-tree_pack-main  /  vanilla  >  legion        |        rarity : 25
+THT-tree_pack-main  /  vanilla  >  legion        |        min_distance : 100
+THT-tree_pack-main  /  vanilla  >  legion        |        group_chance : 0
+THT-tree_pack-main  /  vanilla  >  legion        |        dead_tree_chance : 0.01
+THT-tree_pack-main  /  vanilla  >  legion        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  vanilla  >  legion        |        rotation : 360
+THT-tree_pack-main  /  vanilla  >  legion        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  vanilla  >  polaris        |        biome : minecraft:grove
+THT-tree_pack-main  /  vanilla  >  polaris        |        ground_block : #minecraft:dirt, minecraft:snow_block
+THT-tree_pack-main  /  vanilla  >  polaris        |        rarity : 25
+THT-tree_pack-main  /  vanilla  >  polaris        |        min_distance : 25
+THT-tree_pack-main  /  vanilla  >  polaris        |        group_chance : 0
+THT-tree_pack-main  /  vanilla  >  polaris        |        dead_tree_chance : 0.01
+THT-tree_pack-main  /  vanilla  >  polaris        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  vanilla  >  polaris        |        rotation : 360
+THT-tree_pack-main  /  vanilla  >  polaris        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  vanilla  >  redwood        |        biome : minecraft:old_growth_pine_taiga
+THT-tree_pack-main  /  vanilla  >  redwood        |        ground_block : #minecraft:dirt
+THT-tree_pack-main  /  vanilla  >  redwood        |        rarity : 50
+THT-tree_pack-main  /  vanilla  >  redwood        |        min_distance : 30
+THT-tree_pack-main  /  vanilla  >  redwood        |        group_chance : 0
+THT-tree_pack-main  /  vanilla  >  redwood        |        dead_tree_chance : 0.01
+THT-tree_pack-main  /  vanilla  >  redwood        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  vanilla  >  redwood        |        rotation : 360
+THT-tree_pack-main  /  vanilla  >  redwood        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  vanilla  >  rock        |        biome : minecraft:beach
+THT-tree_pack-main  /  vanilla  >  rock        |        ground_block : #minecraft:dirt, minecraft:sand, minecraft:gravel, minecraft:stone
+THT-tree_pack-main  /  vanilla  >  rock        |        rarity : 1
+THT-tree_pack-main  /  vanilla  >  rock        |        min_distance : 0
+THT-tree_pack-main  /  vanilla  >  rock        |        group_chance : 0.25
+THT-tree_pack-main  /  vanilla  >  rock        |        dead_tree_chance : 0
+THT-tree_pack-main  /  vanilla  >  rock        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  vanilla  >  rock        |        rotation : 360
+THT-tree_pack-main  /  vanilla  >  rock        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  vanilla  >  rock_mossy        |        biome : minecraft:river
+THT-tree_pack-main  /  vanilla  >  rock_mossy        |        ground_block : #minecraft:dirt, minecraft:sand
+THT-tree_pack-main  /  vanilla  >  rock_mossy        |        rarity : 5
+THT-tree_pack-main  /  vanilla  >  rock_mossy        |        min_distance : 0
+THT-tree_pack-main  /  vanilla  >  rock_mossy        |        group_chance : 0.5
+THT-tree_pack-main  /  vanilla  >  rock_mossy        |        dead_tree_chance : 0
+THT-tree_pack-main  /  vanilla  >  rock_mossy        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  vanilla  >  rock_mossy        |        rotation : 360
+THT-tree_pack-main  /  vanilla  >  rock_mossy        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  vanilla  >  sky_island_chain        |        biome : minecraft:jungle
+THT-tree_pack-main  /  vanilla  >  sky_island_chain        |        ground_block : @all
+THT-tree_pack-main  /  vanilla  >  sky_island_chain        |        rarity : 50
+THT-tree_pack-main  /  vanilla  >  sky_island_chain        |        min_distance : 50
+THT-tree_pack-main  /  vanilla  >  sky_island_chain        |        group_chance : 0
+THT-tree_pack-main  /  vanilla  >  sky_island_chain        |        dead_tree_chance : 0
+THT-tree_pack-main  /  vanilla  >  sky_island_chain        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  vanilla  >  sky_island_chain        |        rotation : 360
+THT-tree_pack-main  /  vanilla  >  sky_island_chain        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  vanilla  >  snowland        |        biome : minecraft:snowy_plains
+THT-tree_pack-main  /  vanilla  >  snowland        |        ground_block : #minecraft:dirt
+THT-tree_pack-main  /  vanilla  >  snowland        |        rarity : 5
+THT-tree_pack-main  /  vanilla  >  snowland        |        min_distance : 50
+THT-tree_pack-main  /  vanilla  >  snowland        |        group_chance : 0
+THT-tree_pack-main  /  vanilla  >  snowland        |        dead_tree_chance : 0.25
+THT-tree_pack-main  /  vanilla  >  snowland        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  vanilla  >  snowland        |        rotation : 360
+THT-tree_pack-main  /  vanilla  >  snowland        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  vanilla  >  snow_white        |        biome : minecraft:snowy_taiga
+THT-tree_pack-main  /  vanilla  >  snow_white        |        ground_block : #minecraft:dirt
+THT-tree_pack-main  /  vanilla  >  snow_white        |        rarity : 50
+THT-tree_pack-main  /  vanilla  >  snow_white        |        min_distance : 10
+THT-tree_pack-main  /  vanilla  >  snow_white        |        group_chance : 0
+THT-tree_pack-main  /  vanilla  >  snow_white        |        dead_tree_chance : 0.01
+THT-tree_pack-main  /  vanilla  >  snow_white        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  vanilla  >  snow_white        |        rotation : 360
+THT-tree_pack-main  /  vanilla  >  snow_white        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  vanilla  >  spike_amethyst        |        biome : minecraft:deep_ocean
+THT-tree_pack-main  /  vanilla  >  spike_amethyst        |        ground_block : minecraft:gravel
+THT-tree_pack-main  /  vanilla  >  spike_amethyst        |        rarity : 5
+THT-tree_pack-main  /  vanilla  >  spike_amethyst        |        min_distance : 10
+THT-tree_pack-main  /  vanilla  >  spike_amethyst        |        group_chance : 0.25
+THT-tree_pack-main  /  vanilla  >  spike_amethyst        |        dead_tree_chance : 0
+THT-tree_pack-main  /  vanilla  >  spike_amethyst        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  vanilla  >  spike_amethyst        |        rotation : 0
+THT-tree_pack-main  /  vanilla  >  spike_amethyst        |        mirrored : 1
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  vanilla  >  spike_ice        |        biome : minecraft:ice_spikes
+THT-tree_pack-main  /  vanilla  >  spike_ice        |        ground_block : minecraft:snow_block
+THT-tree_pack-main  /  vanilla  >  spike_ice        |        rarity : 20
+THT-tree_pack-main  /  vanilla  >  spike_ice        |        min_distance : 25
+THT-tree_pack-main  /  vanilla  >  spike_ice        |        group_chance : 0
+THT-tree_pack-main  /  vanilla  >  spike_ice        |        dead_tree_chance : 0
+THT-tree_pack-main  /  vanilla  >  spike_ice        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  vanilla  >  spike_ice        |        rotation : 360
+THT-tree_pack-main  /  vanilla  >  spike_ice        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  vanilla  >  spike_stone        |        biome : minecraft:deep_ocean
+THT-tree_pack-main  /  vanilla  >  spike_stone        |        ground_block : minecraft:gravel
+THT-tree_pack-main  /  vanilla  >  spike_stone        |        rarity : 20
+THT-tree_pack-main  /  vanilla  >  spike_stone        |        min_distance : 50
+THT-tree_pack-main  /  vanilla  >  spike_stone        |        group_chance : 0
+THT-tree_pack-main  /  vanilla  >  spike_stone        |        dead_tree_chance : 0
+THT-tree_pack-main  /  vanilla  >  spike_stone        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  vanilla  >  spike_stone        |        rotation : 0
+THT-tree_pack-main  /  vanilla  >  spike_stone        |        mirrored : 1
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  vanilla  >  spike_terra        |        biome : minecraft:badlands
+THT-tree_pack-main  /  vanilla  >  spike_terra        |        ground_block : minecraft:red_sand
+THT-tree_pack-main  /  vanilla  >  spike_terra        |        rarity : 50
+THT-tree_pack-main  /  vanilla  >  spike_terra        |        min_distance : 25
+THT-tree_pack-main  /  vanilla  >  spike_terra        |        group_chance : 0
+THT-tree_pack-main  /  vanilla  >  spike_terra        |        dead_tree_chance : 0
+THT-tree_pack-main  /  vanilla  >  spike_terra        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  vanilla  >  spike_terra        |        rotation : 0
+THT-tree_pack-main  /  vanilla  >  spike_terra        |        mirrored : 1
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  vanilla  >  the_aspirant        |        biome : minecraft:desert
+THT-tree_pack-main  /  vanilla  >  the_aspirant        |        ground_block : #minecraft:dirt, minecraft:sand
+THT-tree_pack-main  /  vanilla  >  the_aspirant        |        rarity : 0.1
+THT-tree_pack-main  /  vanilla  >  the_aspirant        |        min_distance : 50
+THT-tree_pack-main  /  vanilla  >  the_aspirant        |        group_chance : 0
+THT-tree_pack-main  /  vanilla  >  the_aspirant        |        dead_tree_chance : 0.01
+THT-tree_pack-main  /  vanilla  >  the_aspirant        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  vanilla  >  the_aspirant        |        rotation : 360
+THT-tree_pack-main  /  vanilla  >  the_aspirant        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  vanilla  >  tower_of_the_forest        |        biome : minecraft:dark_forest
+THT-tree_pack-main  /  vanilla  >  tower_of_the_forest        |        ground_block : #minecraft:dirt
+THT-tree_pack-main  /  vanilla  >  tower_of_the_forest        |        rarity : 10
+THT-tree_pack-main  /  vanilla  >  tower_of_the_forest        |        min_distance : 50
+THT-tree_pack-main  /  vanilla  >  tower_of_the_forest        |        group_chance : 0
+THT-tree_pack-main  /  vanilla  >  tower_of_the_forest        |        dead_tree_chance : 0.01
+THT-tree_pack-main  /  vanilla  >  tower_of_the_forest        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  vanilla  >  tower_of_the_forest        |        rotation : 360
+THT-tree_pack-main  /  vanilla  >  tower_of_the_forest        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  vanilla  >  wendy        |        biome : minecraft:taiga
+THT-tree_pack-main  /  vanilla  >  wendy        |        ground_block : #minecraft:dirt
+THT-tree_pack-main  /  vanilla  >  wendy        |        rarity : 50
+THT-tree_pack-main  /  vanilla  >  wendy        |        min_distance : 10
+THT-tree_pack-main  /  vanilla  >  wendy        |        group_chance : 0
+THT-tree_pack-main  /  vanilla  >  wendy        |        dead_tree_chance : 0.01
+THT-tree_pack-main  /  vanilla  >  wendy        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  vanilla  >  wendy        |        rotation : 360
+THT-tree_pack-main  /  vanilla  >  wendy        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  vanilla  >  white_fairy        |        biome : minecraft:old_growth_birch_forest
+THT-tree_pack-main  /  vanilla  >  white_fairy        |        ground_block : #minecraft:dirt
+THT-tree_pack-main  /  vanilla  >  white_fairy        |        rarity : 10
+THT-tree_pack-main  /  vanilla  >  white_fairy        |        min_distance : 50
+THT-tree_pack-main  /  vanilla  >  white_fairy        |        group_chance : 0
+THT-tree_pack-main  /  vanilla  >  white_fairy        |        dead_tree_chance : 0.01
+THT-tree_pack-main  /  vanilla  >  white_fairy        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  vanilla  >  white_fairy        |        rotation : 360
+THT-tree_pack-main  /  vanilla  >  white_fairy        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
+lock : false
+
+THT-tree_pack-main  /  vanilla  >  yokai        |        biome : minecraft:meadow
+THT-tree_pack-main  /  vanilla  >  yokai        |        ground_block : #minecraft:dirt
+THT-tree_pack-main  /  vanilla  >  yokai        |        rarity : 5
+THT-tree_pack-main  /  vanilla  >  yokai        |        min_distance : 100
+THT-tree_pack-main  /  vanilla  >  yokai        |        group_chance : 0
+THT-tree_pack-main  /  vanilla  >  yokai        |        dead_tree_chance : 0.01
+THT-tree_pack-main  /  vanilla  >  yokai        |        dead_tree_level_min : 1
+THT-tree_pack-main  /  vanilla  >  yokai        |        rotation : 360
+THT-tree_pack-main  /  vanilla  >  yokai        |        mirrored : 0
+----------------------------------------------------------------------------------------------------
